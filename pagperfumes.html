@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>R.C Fragances — Perfumes réplicas AAA</title>
+  <meta name="description" content="R.C Fragances - Catálogo de perfumes para hombre (réplicas AAA). 100ml, notas olfativas y compra." />
+
+  <style>
+    .card:hover {
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+  border-color: var(--gold);
+  box-shadow: 0 6px 20px rgba(197,157,52,0.3);
+}
+.buy-btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 14px;
+  font-size: 14px;
+  background: var(--gold);    /* color dorado */
+  color: var(--bg);           /* color del texto */
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+.buy-btn:hover {
+  background: #b8871f;        /* cambia al pasar el mouse */
+  color: var(--white);
+}
+
+.btn:hover {
+  background: var(--gold);     /* El fondo del botón se vuelve dorado */
+  color: var(--bg);            /* El texto cambia a color de fondo (oscuro, para contrastar) */
+  transition: 0.3s ease;       /* Animación suave */
+}
+.price {
+  color: var(--gold);
+  font-weight: 700;
+  margin-left: 10px;
+  font-size:20px;
+}
+
+/* Al pasar el mouse sobre la card, el precio se ilumina */
+.card:hover .price {
+  text-shadow: 0 0 10px var(--gold), 0 0 16px var(--gold);
+}
+.add-cart {
+  padding:6px 10px;
+  font-size:12px;
+  background: var(--gold);
+  color: var(--bg);
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+.add-cart:hover {
+  background: #b8871f;
+}
+
+    :root{
+      --bg:#0b0b0b;
+      --card:#0f0f0f;
+      --muted:#bfb7a8;
+      --gold:#c59d34;
+      --white:#ffffff;
+      --glass: rgba(255,255,255,0.03);
+      --accent: var(--gold);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background: linear-gradient(180deg, #070707 0%, #0b0b0b 100%);
+      color:var(--white);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.4;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:1rem;
+      padding:28px 18px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      position:sticky;
+      top:0;
+      background:linear-gradient(180deg, rgba(11,11,11,0.8), rgba(11,11,11,0.6));
+      backdrop-filter: blur(4px);
+      z-index:50;
+    }
+/* Tablets */
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+}
+
+/* Celulares */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr; /* 1 columna */
+    padding: 12px;
+  }
+
+  .thumb {
+    width: 100%;     /* la imagen ocupa todo el ancho de la card */
+    height: auto;    /* mantiene proporción */
+  }
+
+  .thumb img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  header .brand {
+    flex-direction: column; /* logo y título uno encima del otro */
+    align-items: center;
+  }
+
+  .filters {
+    flex-direction: column;  /* los filtros se apilan */
+    gap: 10px;
+  }
+
+  .buy-btn {
+    width: 100%;      /* botón ocupa todo el ancho de la card */
+    font-size: 16px;  /* más fácil de tocar */
+    padding: 10px;
+  }
+
+  .price {
+    font-size: 22px;  /* precios más visibles */
+  }
+
+  .logo {
+    width: 120px;     /* logo más grande en móviles */
+    height: 120px;
+  }
+}
+
+    .brand{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;}
+    .logo{width:150px;height:150px;display:flex;align-items:center;justify-content:center;border-radius:30px;background:linear-gradient(135deg,var(--glass), rgba(255,255,255,0.02));box-shadow: 0 6px 24px rgba(0,0,0,0.6), inset 0 -6px 12px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.04);overflow:hidden;}
+    .site-title{font-size:50px;font-weight:700;letter-spacing:0.6px}
+    .site-sub{font-size:12px;color:var(--muted)}
+
+    .hero{padding:36px 18px;display:flex;flex-direction:column;align-items:center;gap:18px}
+    .hero h1{margin:0;font-size:32px}
+    .hero p{margin:0;color:var(--muted);max-width:900px;text-align:center}
+
+    .controls{width:100%;max-width:1100px;display:flex;gap:12px;align-items:center;justify-content:space-between;margin-top:8px}
+    .search{flex:1;display:flex;align-items:center;gap:8px}
+    .search input{flex:1;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--white)}
+    .filters{display:flex;gap:8px}
+    .btn{padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--white);cursor:pointer}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:24px;max-width:1200px;margin:0 auto}
+    @media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.grid{grid-template-columns:1fr}}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:14px;border:1px solid rgba(255,255,255,0.04);display:flex;gap:12px;align-items:flex-start}
+    .thumb{width:150px;height:150px;border-radius:12px;overflow:hidden;flex-shrink:0}
+    .thumb img{width:100%;height:100%;object-fit:cover;border-radius:10px}
+    .info{flex:1}
+    .name{font-size:16px;font-weight:700}
+    .meta{font-size:12px;color:var(--muted);margin-top:6px}
+    .notes{margin-top:10px;font-size:13px;color:var(--muted)}
+    .badge{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(0,0,0,0.35);border:1px solid rgba(255,255,255,0.03);font-size:12px;color:var(--gold);font-weight:700}
+
+    .cta{display:flex;gap:12px;align-items:center}
+    .whatsapp{position:fixed;right:18px;bottom:18px;background:linear-gradient(180deg,var(--gold), #b8871f);padding:12px;border-radius:18px;box-shadow:0 8px 28px rgba(197,157,52,0.18);z-index:60}
+    .whatsapp a{color:#0b0b0b;font-weight:800;text-decoration:none}
+
+    footer{padding:26px 18px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);margin-top:28px}
+
+    .notes strong{color:var(--white)}
+    .glass-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">
+        <img src="img/logoof.jpg" alt="Logo R.C Fragances" style="max-width:100%; max-height:100%; border-radius:50%;" />
+      </div>
+      <div>
+        <div class="site-title">R.C Fragances</div>
+        <div class="site-sub">Réplicas AAA • perfumes ideales para vos </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Catálogo masculino — R.C Fragances</h1>
+      <p> En R.C Fragances ofrecemos réplicas AAA de perfumes masculinos de alta calidad, con la misma esencia y duración que los originales, en frascos de 100 ml. Aromas frescos, amaderados o con toques de vainilla, ideales para cada ocasión. Elegí tu fragancia favorita y destacá tu estilo sin gastar de más.</p>
+
+      <div class="controls">
+        <div class="search" role="search">
+          <input id="q" type="search" placeholder="Buscar perfume — ej: \"Polo Blue\"" aria-label="Buscar perfumes" />
+          <button class="btn" id="clear">Limpiar</button>
+        </div>
+        <div class="filters">
+          <button class="btn" data-filter="all">Todos</button>
+          <button class="btn" data-filter="fresh">Frescos</button>
+          <button class="btn" data-filter="vanilla">Vainilla / Dulces</button>
+          <select id="sort" class="btn">
+    <option value="">Ordenar por precio</option>
+    <option value="asc">Menor a Mayor</option>
+    <option value="desc">Mayor a Menor</option>
+  </select>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="grid" class="grid" aria-live="polite"></div>
+    </section>
+
+    <section style="max-width:1100px;margin:24px auto;padding:0 18px;">
+      <div class="glass-card">
+        <strong>Compra:</strong>. Contactanos por WhatsApp y te pasamos método de pago y tiempos de entrega.
+      </div>
+    </section>
+
+  </main>
+
+  <a class="whatsapp" href="https://wa.me/543544462938?text=Hola%20R.C%20Fragances%20quiero%20info" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <span style="font-weight:800">WhatsApp</span>
+  </a>
+
+  <footer;">© R.C Fragances — Réplicas AAA • Todos los perfumes 100 ml • Diseño responsivo</div>
+  </footer>
+
+  <script>
+    const perfumes = [
+      {name:'Polo Blue', brand:'Ralph Lauren', size:'100 ml', price:'$31.500', tags:['fresh'], notes:'Notas de salida: Melón, pepino, cítricos / Corazón: Albahaca, salvia, geranio / Fondo: Musgo, madera, almizcle', img:'img/poloblue.png'},
+      {name:'Versace Eros', brand:'Versace', size:'100 ml', price:'$34.500', tags:['vanilla'], notes:'Salida: Menta, manzana verde, limón / Corazón: Ambroxán, geranio, tonka / Fondo: Vainilla, musgo, cedro', img:'img/versaceeros.png'},
+      {name:'Versace Eros Flame', brand:'Versace', size:'100 ml', price:'$25.000', tags:['warm','vanilla'], notes:'Salida: Naranja sanguina, limón / Corazón: Pimienta negra, rosa / Fondo: Vainilla, madera de guayaco, tonka', img:'img/versaceerosflame.png'},
+      {name:'Versace Men', brand:'Versace', size:'100 ml', price:'$25.000', tags:['fresh'], notes:'Salida: Limón, bergamota, neroli / Corazón: Salvia, cedrón, jacinto / Fondo: Almizcle, cedro, almizcle blanco', img:'img/versacemen.png'},
+      {name:'Acqua di Gio Premium', brand:'Giorgio Armani', size:'100 ml', price:'$28.500', tags:['fresh'], notes:'Salida: Bergamota, limón / Corazón: Jazmín, notas marinas / Fondo: Madera, almizcle, incienso', img:'img/aquadigiofresco.png'},
+      {name:'Acqua di Gio Profumo', brand:'Giorgio Armani', size:'100 ml', price:'$37.500', tags:['fresh','warm'], notes:'Salida: Bergamota, notas marinas / Corazón: Geranio, salvia / Fondo: Incienso, pachulí, madera', img:'img/aqcuadigio.png'},
+      {name:'Bad Boy', brand:'Carolina Herrera', size:'100 ml', price:'$39.000', tags:['warm'], notes:'Salida: Pimienta negra, bergamota / Corazón: Cedro, salvia / Fondo: Tonka, cacao, madera', img:'img/badboy.png'},
+      {name:'One Million', brand:'Paco Rabanne', size:'100 ml', price:'36.000', tags:['warm','vanilla'], notes:'Salida: Pomelo, notas verdes / Corazón: Rosa, canela / Fondo: Piel, ámbar, cuero, madera y vainilla ligera', img:'img/onemillion.png'},
+      {name:'Moschino Toy Boy Black', brand:'Moschino', size:'100 ml', price:'$30.000', tags:['warm'], notes:'Salida: Bergamota, cilantro / Corazón: Lavanda, patchouli / Fondo: Vainilla oscura, cacao, maderas', img:'img/toyboy.png'},
+      {name:'Fahrenheit', brand:'Dior', size:'100 ml', price:'$33.000', tags:['warm'], notes:'Salida: Bergamota, mandarina, lavanda / Corazón: Notas florales / Fondo: Cuero, vetiver, madera', img:'img/fahrenheit.png'},
+      {name:'Polo Black', brand:'Ralph Lauren', size:'100 ml', price:'$27.000', tags:['warm'], notes:'Salida: Madera de mango, cardamomo / Corazón: Té negro, pachulí / Fondo: Madera, cuero y almizcles', img:'img/poloblack.png'},
+      {name:'Phantom Black', brand:'Paco Rabanne', size:'100 ml', price:'$37.500', tags:['vanilla','fresh'], notes:'Salida: Lavanda, bergamota / Corazón: Nota aromática dulce / Fondo: Vainilla, maderas, almizcle', img:'img/phantomblack.png'},
+      {name:'Invictus Victory', brand:'Paco Rabanne', size:'100 ml', price:'$36.000', tags:['fresh','warm'], notes:'Salida: Cítricos / Corazón: Notas aromáticas / Fondo: Maderas intensas y ambarinas', img:'img/invictusvictory.png'},
+      {name:'Invictus Parfum', brand:'Paco Rabanne', size:'100 ml', price:'$37.500', tags:['warm'], notes:'Salida: Notas amaderadas / Corazón: Marinas y aromáticas / Fondo: Maderas, ambroxan y musgo', img:'img/invictusparfum.png'},
+      {name:'Invictus Clásico', brand:'Paco Rabanne', size:'100 ml', price:'$36.000', tags:['fresh'], notes:'Salida: Pomelo, notas marinas / Corazón: Jazmín, hojas de laurel / Fondo: Madera de gaiac, ámbar gris', img:'img/invictusclasico.png'},
+      {name:'212 Heroes', brand:'Carolina Herrera', size:'100 ml', price:'$29.000', tags:['fresh'], notes:'Salida: Pomelo, limón / Corazón: Notas verdes, especias / Fondo: Maderas, almizcle', img:'img/212heroes.png'},
+      {name:'Tom Ford Oud Wood', brand:'Tom Ford', size:'100 ml', price:'$27.000', tags:['vainilla'], notes:'Salida: cardamomo / Corazón: Oud madera oscura, densa y ahumada, con un toque animalic / Fondo: Vainilla ', img:'img/tomford.png'}
+      
+    ];
+
+    const grid = document.getElementById('grid');
+
+    function render(list){
+      grid.innerHTML='';
+      list.forEach(p=>{
+        const div = document.createElement('div'); div.className='card';
+        div.innerHTML = `
+          <div class="thumb"><img src="${p.img}" alt="${p.name}" /></div>
+          <div class="info">
+            <div class="name">${p.name} <span class="badge">Réplica AAA</span></div>
+            <div class="meta">${p.brand} • ${p.size} • <strong>Precio:</strong> <span class="price">${p.price}</span></div>
+            <div class="notes"><strong>Notas:</strong> ${p.notes}</div>
+            <a class="buy-btn" 
+   href="https://wa.me/543544462938?text=Hola%20R.C%20Fragances,%20quiero%20comprar%20${encodeURIComponent(p.name)}" 
+   target="_blank">
+   Comprar
+</a>
+          </div>
+        `;
+        grid.appendChild(div);
+      })
+    }
+document.getElementById('sort').addEventListener('change', (e)=>{
+  const order = e.target.value;
+  let sorted = [...perfumes];
+  if(order==='asc') sorted.sort((a,b)=> parseInt(a.price.replace(/\D/g,'')) - parseInt(b.price.replace(/\D/g,'')));
+  if(order==='desc') sorted.sort((a,b)=> parseInt(b.price.replace(/\D/g,'')) - parseInt(a.price.replace(/\D/g,'')));
+  render(sorted);
+});
+
+    render(perfumes);
+
+    document.getElementById('q').addEventListener('input', (e)=>{
+      const q = e.target.value.toLowerCase().trim();
+      const filtered = perfumes.filter(p=> p.name.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q));
+      render(filtered);
+    });
+
+    document.getElementById('clear').addEventListener('click', ()=>{document.getElementById('q').value=''; render(perfumes)});
+
+    document.querySelectorAll('[data-filter]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const f = btn.getAttribute('data-filter');
+        if(f==='all') render(perfumes);
+        else{
+          const filtered = perfumes.filter(p=> p.tags.includes(f) );
+          render(filtered);
+        }
+      });
+    });
+</script>
+</body>
+</html>
+
